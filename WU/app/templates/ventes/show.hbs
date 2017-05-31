@@ -1,0 +1,88 @@
+
+  <div class="container pt-2">
+
+       <!--First row-->
+       <div class="row">
+<!-- Faire un component pour ça : lui donner l'ensemble des billets disponibles.
+Pareil pour accueil.Js ou on donne cette fois-ci l'ensembles des billetereies disponibles.
+{{#each model as |vente|}}
+{{component list-liens-items vente=vente}}
+{{/each}}
+
+<a href="{{ticket.description}}" onclick="showDescription()" class="list-group-item list-group-item-action billet"> ´{{ticket.nom}} </a>
+
+ -->
+           <div class="col-md-6 search-left">
+            <div class="list-group">
+                <caption class="m-3"> Cac'Carotte </caption>
+                <a href="#" class="list-group-item row">
+                  <span class="col-md-8 article">1/2 panier légumes </span>
+                    <input class="col-md-2 qty-input form-group"  min="0" type="number" value="0"/>
+                </a>
+                <a href="#" class="list-group-item row ">
+                   <span class="col-md-8 article">Panier entier légumes </span>
+                      <input class="col-md-2 qty-input form-group"  min="0" type="number" value="0"/>
+                </a>
+                <a href="#" class="list-group-item row">
+                  <span class="col-md-8 article">Panier fruits </span>
+                  <input class="col-md-2 qty-input form-group"  min="0" type="number" value="0"/>
+                </a>
+                <a href="#" class="list-group-item row">
+                  <span class="col-md-8 article">Oeufs</span>
+                  <input class="col-md-2 qty-input form-group"  min="0" type="number" value="0"/>
+                </a>
+                <a href="#" class="list-group-item row">
+                  <span class="col-md-8 article">Pain</span>
+                  <input class="col-md-2 qty-input form-group"  min="0" type="number" value="0"/>
+                </a>
+                <a href="#" class="list-group-item row">
+                  <span class="col-md-8 article">Miel</span>
+                  <input class="col-md-2 qty-input form-group" min="0" type="number" value="0"/>
+                </a>
+                <a href="" onclick="confirmReservation()" class="list-group-item row reservation" >
+                  Commander
+                  <!-- <span class=" btn reservation waves-effect waves-light">
+                  Commander
+                </span> -->
+                 </a>
+            </div>
+             </div>
+             <!-- Remplacer par un deuxieme component : afficher description. Sans contenu au départ ??-->
+             <!-- {{component item-description article }} -->
+             <!-- {{#component item-description}}
+             {{article.description}}
+             {{/ component}} -->
+             <div class=" col-md-6 search-right card card-block pb-0">
+               <h4 class=" card-title"> 1/2 panier légumes</h4>
+               <p class="card-text">
+                 <span class="description row">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis pariatur quod ipsum atque quam dolorem voluptate officia sunt placeat consectetur alias fugit cum praesentium ratione sint mollitia, perferendis natus quaerat!
+                 </span> <br/>
+                <span class="row">
+                 <i class="col-md-6"> Fin de la vente : Mardi 16 mars
+                 </i>
+                 <span class="col-md-3 col-md-offset-1 prix ">
+                   34 €
+                   <!-- {{model.article.price}}.{{model.user.type}} -->
+                 </span>
+               </span>
+
+               </p>
+
+               <!-- <a href="" onclick="confirmReservation()" class="btn reservation waves-effect waves-light" id="alert-reservation" > Commander </a> -->
+             </div>
+
+           <!-- <div class="col-md-6 search-right p-4 ">
+             <h2 class="h2-responsive"> 1/2 Panier légumes </h2>
+<hr>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis pariatur quod ipsum atque quam dolorem voluptate officia sunt placeat consectetur alias fugit cum praesentium ratione sint mollitia, perferendis natus quaerat!</p>
+<a href="" class="btn reservation" id="alert-reservation" > Ajouter au panier </a>
+           </div> -->
+      </div>
+    </div>
+
+    <!-- MODEL via un component-->
+
+      {{item-description model=model}}
+
+{{outlet}}

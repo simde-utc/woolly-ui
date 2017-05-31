@@ -1,0 +1,204 @@
+
+.teal.lighten-5 {
+  background-color: #e0f2f1 !important; }
+
+.teal-text.text-lighten-5 {
+  color: #e0f2f1 !important; }
+
+.teal.lighten-4 {
+  background-color: #b2dfdb !important; }
+
+.teal-text.text-lighten-4 {
+  color: #b2dfdb !important; }
+
+.teal.lighten-3 {
+  background-color: #80cbc4 !important; }
+
+.teal-text.text-lighten-3 {
+  color: #80cbc4 !important; }
+
+.teal.lighten-2 {
+  background-color: #4db6ac !important; }
+
+.teal-text.text-lighten-2 {
+  color: #4db6ac !important; }
+
+.teal.lighten-1 {
+  background-color: #26a69a !important; }
+
+.teal-text.text-lighten-1 {
+  color: #26a69a !important; }
+
+.teal {
+  background-color: #009688 !important; }
+
+.teal-text {
+  color: #009688 !important; }
+
+.teal.darken-1 {
+  background-color: #00897b !important; }
+
+.teal-text.text-darken-1 {
+  color: #00897b !important; }
+
+.teal.darken-2 {
+  background-color: #00796b !important; }
+
+.teal-text.text-darken-2 {
+  color: #00796b !important; }
+
+.teal.darken-3 {
+  background-color: #00695c !important; }
+
+.teal-text.text-darken-3 {
+  color: #00695c !important; }
+
+.teal.darken-4 {
+  background-color: #004d40 !important; }
+
+.teal-text.text-darken-4 {
+  color: #004d40 !important; }
+
+.teal.accent-1 {
+  background-color: #a7ffeb !important; }
+
+.teal-text.text-accent-1 {
+  color: #a7ffeb !important; }
+
+.teal.accent-2 {
+  background-color: #64ffda !important; }
+
+.teal-text.text-accent-2 {
+  color: #64ffda !important; }
+
+.teal.accent-3 {
+  background-color: #1de9b6 !important; }
+
+.teal-text.text-accent-3 {
+  color: #1de9b6 !important; }
+
+.container , .navbar
+{
+  /*font-family: 'Lobster', cursive;*/
+  font-family: 'Nunito', sans-serif;
+  /*font-family: 'Lobster';*/
+  /*font-weight: 300;*/
+}
+.navbar-brand{
+  font-weight: bold;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  font-family: 'Montserrat Subrayada' !important;
+  margin-left: 3em !important;
+}
+.navbar-nav{
+  margin-right: 2em !important;
+}
+.navbar{
+  font-weight: semi-bold;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+}
+.container{
+  background-color: #fbe9e7;
+  height: 100%;
+}
+  .alerte
+  {
+    text-align: center;
+    background-color: #ff8a65;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-radius: 0.5em;
+  }
+  .alerte a
+  {
+      color: white;
+  }
+  .liste-ventes
+  {
+    text-align: center;
+  }
+  .liste-ventes a{
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a:hover, a:focus {
+    text-decoration: none;
+  }
+  .qty-input{
+    border-radius: 0.3em;
+    border-width: 0.01em;
+    border-color: #ff8a65;
+    border-style:solid;
+    padding: 0.5em;
+  }
+  .article{
+    vertical-align: middle;
+    font-size: 1.1em;
+    margin-top: 0.5em;
+  }
+  .reservation{
+    text-align: center;
+      font-size: 1.8em !important;
+      color: #ff7043 !important;
+  }
+  .card-title{
+    padding-top: 4em;
+    font-size: 2em;
+    font-weight: 600;
+    color: #ff8a65;
+  }
+  .prix{
+    font-size: 1.7em;
+    color: #ff7043;
+  }
+
+  .list-group caption{
+    margin-top:0.5em;
+    margin-left: 0.5em;
+    font-size: 2.5em;
+    font-weight: 600 !important;
+    color: #ff8a65;
+  }
+
+/*ORDERS*/
+.title{
+  color: #ff7043;
+}
+.order{
+  font-family: 'Quicksand', sans-serif;
+}
+.montant_u{
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: #ff7043;
+  color: pink;
+}
+.total{
+  font-weight: 600;
+}
+.total .btn{
+  margin-left: 1em;
+  background-color: #ffccbc;
+  color: #ff7043;
+}
+
+th , td {
+  width: 30%;
+}
+
+/*JQUERY DESCRIPTION CARD*/
+/*#description_card {
+  display: none;
+}*/
+/*.hidden{
+  display: none;
+}*/
