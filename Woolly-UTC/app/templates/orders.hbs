@@ -1,0 +1,206 @@
+<h1 class="title  ">Mes commandes</h1>
+
+<div class="panel panel-default order">
+  <div class="panel-heading">
+    <h3 class="panel-title">CHARC'UTC</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>Article</th>
+      <th>Quantité</th>
+      <th>Montant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abondance </td>
+      <td>1</td>
+      <td>4.40€</td>
+    </tr>
+    <tr>
+      <td>Tomette de chèvre</td>
+      <td>2</td>
+      <td>19 €</td>
+    </tr>
+    <tr>
+      <td> Terrine de cerf</td>
+      <td>1</td>
+      <td>2.80 € </td>
+    </tr>
+    <tr class="total">
+      <td >TOTAL</td>
+      <td></td>
+      <td>26.20 €
+      <button class="btn"> Payer </button></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+
+<div class="panel panel-default order">
+  <div class="panel-heading">
+    <h3 class="panel-title">CAC CAROTTE</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>Article</th>
+      <th>Quantité</th>
+      <th>Montant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1/2 panier légumes</td>
+      <td>Otto</td>
+      <td>17€</td>
+    </tr>
+    <tr>
+      <td>Oeufs</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1/2 panier fruit</td>
+      <td>1</td>
+      <td>17 € </td>
+    </tr>
+    <tr class="total">
+      <td >TOTAL</td>
+      <td></td>
+      <td>37 €
+      <button class="btn"> Payer </button></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+<div class="panel panel-default order">
+  <div class="panel-heading">
+    <h3 class="panel-title">CAC CAROTTE</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>Article</th>
+      <th>Quantité</th>
+      <th>Montant</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>Oeufs</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1/2 panier fruit</td>
+      <td>1</td>
+      <td>17 € </td>
+    </tr>
+    <tr class="total">
+      <td>TOTAL</td>
+      <td></td>
+      <td>37 €
+        <button class="btn">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+        Payé </button>
+      </td>
+        </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+
+<div class="panel panel-default order">
+  <div class="panel-heading">
+    <h3 class="panel-title">ETUVILLE</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>Article</th>
+      <th>Quantité</th>
+      <th>Montant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gala UTC</td>
+      <td>1</td>
+      <td>25€</td>
+    </tr>
+    <tr class="total">
+      <td >TOTAL</td>
+      <td></td>
+      <td>37 €
+      <button class="btn">
+        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+Payé </button></td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+<!-- MODEL avec pour l'instant une seule order-->
+<div class="panel panel-default order">
+  <div class="panel-heading">
+    <h3 class="panel-title">CHARC'UTC</h3>
+  </div>
+  <div class="panel-body">
+    <table class="table">
+  <thead class="thead-default">
+    <tr>
+      <th>Article</th>
+      <th>Quantité</th>
+      <th>Montant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abondance </td>
+      <td>{{model.quantity}}</td>
+      <td>4.40€</td>
+    </tr>
+    <tr>
+      <td>Tomette de chèvre</td>
+      <td>2</td>
+      <td>19 €</td>
+    </tr>
+    <tr>
+      <td> Terrine de cerf</td>
+      <td>1</td>
+      <td>2.80 € </td>
+    </tr>
+    <tr class="total">
+      <td >TOTAL</td>
+      <td></td>
+      <td> {{format-currency 26.22}}
+        {{#if model.payed }}
+              <button class="btn">
+                <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                Payé
+              </button>
+        {{else}}
+              <button class="btn"> Payer </button>
+        {{/if}}
+        </td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+
+{{outlet}}
