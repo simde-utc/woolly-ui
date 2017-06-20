@@ -7,10 +7,8 @@ import { hasMany } from 'ember-data/relationships';
 
 
 export default DS.Model.extend({
-  name: attr('string'),
-  description: attr('string'),
-  initialQuantity : attr('number'),
-  remainingQuantity: attr('number'),
+  order: attr('number'),
+  quantity: attr('number'),
 
-  itemspecifications  : hasMany('itemspecification'),
+  item : belongsTo('item'),
 });

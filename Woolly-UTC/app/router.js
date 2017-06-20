@@ -10,9 +10,10 @@ Router.map(function() {
   this.route('about');
   this.route('user');
   this.route('ventes', function() {
-    this.route('show', { path: '/show/:sale_id' });
+    this.route('show', { path: ':sale_id/show/items/' });
   });
   this.route('orders');
+  this.route('login');
 });
 
 export default Router;

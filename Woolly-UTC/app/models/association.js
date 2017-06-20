@@ -7,18 +7,11 @@ import { hasMany } from 'ember-data/relationships';
 
 export default DS.Model.extend({
   // sale_id:belongsTo('sale'),
-  date : DS.attr('date'),
-  status : DS.attr('string'),
+  name : DS.attr('string'),
+  bankAccount : DS.attr('number'),
+  fondationId : DS.attr('number'),
 
-  orderlines : DS.hasMany('orderline'),
+  sales : DS.hasMany('sale'),
 
-  // cart : hasMany('cart'),
-  // user : belongsTo('user'),
-  // saleId : belongsTo('sale'),
-  // pictureUrl : DS.attr('string'), // image d'un order ?
 
 });
-//payment_methods
-//user
-//Asso
-//cart

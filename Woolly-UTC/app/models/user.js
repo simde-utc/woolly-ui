@@ -5,20 +5,21 @@ import attr from 'ember-data/attr';
 import { belongsTo } from 'ember-data/relationships';
 
 export default DS.Model.extend({
-  firstName: DS.attr('string'),
+  // firstName: DS.attr('string'),
   login : DS.attr('string'),
-  department : DS.attr('string'),
-  lastName : DS.attr('string'),
+  // department : DS.attr('string'),
+  // lastName : DS.attr('string'),
   password : DS.attr('string'),
-  birthdate : DS.attr('date'),
-  pictureUrl : DS.attr('string'),
+  woollyusertype : DS.belongsTo('woollyusertype'),
+  // birthdate : DS.attr('date'),
+  // pictureUrl : DS.attr('string'),
 
-  fullName: Ember.computed('firstName', 'lastName', function(){
-    return this.get('firstName')+" "+this.get('lastName');
-  }),
-  ofAge : Ember.computed('birthdate', function(){
-    return ((new Date() - this.get('birthdate'))>=18);
-  })
+  // fullName: Ember.computed('firstName', 'lastName', function(){
+  //   return this.get('firstName')+" "+this.get('lastName');
+  // }),
+  // ofAge : Ember.computed('birthdate', function(){
+  //   return ((new Date() - this.get('birthdate'))>=18);
+  // })
 
   // orders : hasMany('order'),
   // assos: hasMany('assoRole'),

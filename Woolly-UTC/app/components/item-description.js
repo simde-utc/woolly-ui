@@ -10,6 +10,7 @@ export default Ember.Component.extend({
       // $('.search-right').toggleClass('hidden');
       // $('#'+id).toggleClass('hidden');
       // $('#'+id_desc).show();
+      console.log(id_desc);
       $('#'+id_desc).fadeIn(300);
    });
   }

@@ -151,7 +151,7 @@
       color: #ff7043 !important;
   }
   .card-title{
-    padding-top: 4em;
+    padding-top: 2em;
     font-size: 2em;
     font-weight: 600;
     color: #ff8a65;
@@ -193,6 +193,14 @@
 
 th , td {
   width: 30%;
+}
+
+/*LOGIN PAGE*/
+.btn-login{
+  margin-bottom: 0.8em;
+  padding : 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 /*JQUERY DESCRIPTION CARD*/

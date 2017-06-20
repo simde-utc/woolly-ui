@@ -36,7 +36,8 @@ module.exports = function(environment) {
  // Set or update content security policies
  contentSecurityPolicy: {
    'font-src': "'self' fonts.gstatic.com",
-   'style-src': "'self' fonts.googleapis.com"
+   'style-src': "'self' fonts.googleapis.com",
+   'connect-src': "'self' utc.fr etuville.fr http://127.0.0.1:8000/"
  }
   };
 

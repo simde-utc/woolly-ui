@@ -1,0 +1,20 @@
+<h1>Login page</h1>
+<div class="row">
+  <div class="col-lg-1">
+  </div>
+  <div class="col-lg-6">
+    {{#if logged}}
+      <form {{action 'logoutUTC' on='submit'}}>
+        <button type="submit" class="btn-login">Logout</button>
+      </form>
+    {{else}}
+      <form {{action 'loginUTC' on='submit'}}>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    {{/if}}
+    <!-- route : {{routeToRedirect}} <br/>
+    logged : {{logged}} -->
+
+  </div>
+</div>
+{{outlet}}

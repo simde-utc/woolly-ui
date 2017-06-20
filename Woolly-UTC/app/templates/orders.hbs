@@ -1,8 +1,51 @@
 <h1 class="title  ">Mes commandes</h1>
 
-<div class="panel panel-default order">
+
+{{#if model.orders}}
+{{#each model.orders as |order|}}
+    <div class="panel panel-default order">
+      <div class="panel-heading">
+        <h3 class="panel-title">CHARC'UTC  : commande émise le {{format-date order.date}} </h3>
+      </div>
+      <div class="panel-body">
+        <table class="table">
+      <thead class="thead-default">
+        <tr>
+          <th>Article</th>
+          <th>Quantité</th>
+          <th>Montant</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each order.orderlines as |line|}}
+             <tr>
+               <td>{{line.item.name}} </td>
+               <td> {{line.quantity}}</td>
+               <td>
+               {{#each line.item.itemspecifications as |spec|}}
+                    {{spec.price}} €
+               {{/each}}
+               </td>
+             </tr>
+        {{/each}}
+        <tr class="total">
+          <td >TOTAL</td>
+          <td></td>
+          <td>26.20 €
+          <button class="btn"> {{status-order order.status}} </button></td>
+        </tr>
+      </tbody>
+    </table>
+      </div>
+    </div>
+{{/each}}
+{{else}}
+<span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+Vous n'avez pas encore de commandes passées.
+{{/if}}
+<!-- <div class="panel panel-default order">
   <div class="panel-heading">
-    <h3 class="panel-title">CHARC'UTC</h3>
+    <h3 class="panel-title">CHARC'UTC </h3>
   </div>
   <div class="panel-body">
     <table class="table">
@@ -151,10 +194,10 @@ Payé </button></td>
   </tbody>
 </table>
   </div>
-</div>
+</div> -->
 
 <!-- MODEL avec pour l'instant une seule order-->
-<div class="panel panel-default order">
+<!-- <div class="panel panel-default order">
   <div class="panel-heading">
     <h3 class="panel-title">CHARC'UTC</h3>
   </div>
@@ -200,7 +243,7 @@ Payé </button></td>
   </tbody>
 </table>
   </div>
-</div>
+</div> -->
 
 
 {{outlet}}
