@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export function sum(params/*, hash*/) {
+export function sum(params) {
   return params.reduce((a, b) => {
     return a + b;
   });
